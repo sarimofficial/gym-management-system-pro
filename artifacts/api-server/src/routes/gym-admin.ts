@@ -986,7 +986,7 @@ router.get("/reports/financial", async (req, res) => {
   const totalRevenue = membershipIncome + salesIncome;
 
   // Build weekly breakdown
-  const breakdown = [];
+  const breakdown: any[] = [];
   for (let w = 1; w <= 4; w++) {
     const weekStart = `${month}-${String((w - 1) * 7 + 1).padStart(2, "0")}`;
     const weekEnd = `${month}-${String(w * 7).padStart(2, "0")}`;
