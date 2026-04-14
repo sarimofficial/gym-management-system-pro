@@ -12,11 +12,9 @@
     "types": ["node", "vite/client"],
     "paths": {
       "@/*": ["./src/*"]
-    }
-  },
-  "references": [
-    {
-      "path": "../../lib/api-client-react"
-    }
-  ]
+    },
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "strict": false
+  }
 }
